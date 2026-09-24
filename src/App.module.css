@@ -1,0 +1,189 @@
+.app {
+    display: flex;
+    height: 100vh;
+    background: #f3f4f6;
+}
+
+.sidebar {
+    width: 320px;
+    background: #fff;
+    border-right: 1px solid #e5e7eb;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebarHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 20px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.sidebarTitle {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1a1a2e;
+}
+
+.sidebarLogout {
+    background: none;
+    border: none;
+    color: #ef4444;
+    font-size: 13px;
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 6px;
+    transition: background 0.2s;
+}
+
+.sidebarLogout:hover {
+    background: #fef2f2;
+}
+
+.chatItem {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 20px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.chatItem:hover {
+    background: #f9fafb;
+}
+
+.avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    flex-shrink: 0;
+}
+
+.chatInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    overflow: hidden;
+}
+
+.contactName {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1a1a2e;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.lastMessage {
+    font-size: 13px;
+    color: #9ca3af;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* Экран создания чата */
+.chatSetup {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 16px;
+}
+
+.setupCard {
+    background: #fff;
+    border-radius: 16px;
+    padding: 40px 32px;
+    width: 100%;
+    max-width: 460px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+.setupTitle {
+    margin: 0 0 8px;
+    font-size: 22px;
+    font-weight: 700;
+    color: #1a1a2e;
+    text-align: center;
+}
+
+.setupSubtitle {
+    margin: 0 0 28px;
+    font-size: 14px;
+    color: #6b7280;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.setupSubtitle code {
+    background: #f3f4f6;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 13px;
+    color: #667eea;
+}
+
+.setupForm {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.setupInput {
+    padding: 14px 16px;
+    border: 2px solid #e5e7eb;
+    border-radius: 10px;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.setupInput:focus {
+    border-color: #667eea;
+}
+
+.setupButton {
+    padding: 14px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.setupButton:hover {
+    opacity: 0.9;
+}
+
+.logoutButton {
+    margin-top: 16px;
+    width: 100%;
+    padding: 10px;
+    background: none;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    color: #6b7280;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.logoutButton:hover {
+    background: #f9fafb;
+}
